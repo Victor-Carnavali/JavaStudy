@@ -9,7 +9,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+
 import javafx.scene.control.Label;
 
 /**
@@ -20,7 +20,6 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Label lblMessage;
-    private Button btnButton;
     
     @FXML
     private void clickButton(ActionEvent event) {
