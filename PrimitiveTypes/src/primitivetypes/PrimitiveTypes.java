@@ -19,7 +19,6 @@ public class PrimitiveTypes {
         String nome = scanner.nextLine();
         System.out.print("A nota do aluno: ");
         float nota = scanner.nextFloat();
-        scanner.
 
         System.out.format("A nota de %s e %.2f \n",nome,nota);
     }
