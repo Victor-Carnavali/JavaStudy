@@ -118,8 +118,7 @@ public class ageScreen extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
-        
-        
+   
         int yearAge = Integer.parseInt(txtYA.getValue().toString());
         int age = yearSystem - yearAge;
         lblAge.setText(Integer.toString(age));
