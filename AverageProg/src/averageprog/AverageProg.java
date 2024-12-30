@@ -12,8 +12,7 @@ public class AverageProg {
         Scanner scanner = new Scanner(System.in);
         
         // Simple condition
-        
-        System.out.print("Put first value: ");
+        /*System.out.print("Put first value: ");
         float firstValue = scanner.nextFloat();
         System.out.print("Put second value: ");
         float secondValue = scanner.nextFloat();
@@ -24,7 +23,7 @@ public class AverageProg {
         if (averageResult >= 6) {
             System.out.println("Great job");
         }
-        
+        */
     
         // Compound condition 
         /*int systemYear = Year.now().getValue();
