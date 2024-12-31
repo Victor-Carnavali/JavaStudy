@@ -6,6 +6,7 @@ public class CounterOne {
         // TODO code application logic here
         int cc = 0;
 
+        /*
         while (cc < 10) {
             cc++;
             if(cc == 5 || cc == 7){
@@ -13,7 +14,13 @@ public class CounterOne {
             }
             System.out.println("Somersault = " + cc);
         }
+        */
         
+        do{
+            System.out.println("Somersault = " + cc);
+            cc++;
+        }
+        while(cc<4);
     }
 
 }
