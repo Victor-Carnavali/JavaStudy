@@ -12,7 +12,7 @@ public class VectorFour {
         }
         
         System.out.println("");
-        int position = Arrays.binarySearch(vet, Integer.SIZE);
+        int position = Arrays.binarySearch(vet, 1);
         System.out.println(position);
     }
 
