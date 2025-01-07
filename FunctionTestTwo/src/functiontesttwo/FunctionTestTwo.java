@@ -11,14 +11,7 @@ public class FunctionTestTwo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //System.out.println("Be started a count: ");
-        //System.out.println(Operations.counter(1, 5));
-  int x, y;
-double z;
-
-x = 5;
-y = 2;
-z = x / y;
-System.out.print(z);
+        System.out.println("Be started a count: ");
+        System.out.println(Operations.counter(1, 5));
     }
 }
