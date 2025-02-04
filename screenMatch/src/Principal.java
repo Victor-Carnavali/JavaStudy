@@ -4,10 +4,15 @@ public class Principal {
         meuFilme.nome = "O poderoso chefao";
         meuFilme.anoDeLancamento = 1972;
         meuFilme.duracaoEmMinutos = 180;
-        meuFilme.avaliacao = 9;
+        meuFilme.somaDasAvaliacoes = 9;
 
-        System.out.println("Nome do meu filme preferido: " + meuFilme.nome);
-        System.out.println("Ano de lancamento: " + meuFilme.anoDeLancamento);
-        System.out.println("Minha avaliacao: " + meuFilme.avaliacao);
+        meuFilme.exibeFichaTecnica();
+
+        meuFilme.avalia(9);
+        meuFilme.avalia(8.5);
+        meuFilme.avalia(10);
+        System.out.println(meuFilme.somaDasAvaliacoes);
+        System.out.println(meuFilme.totalAvaliacoes);
+        System.out.printf("%.2f estrelas \n", meuFilme.pegaMedia());
     }
 }
