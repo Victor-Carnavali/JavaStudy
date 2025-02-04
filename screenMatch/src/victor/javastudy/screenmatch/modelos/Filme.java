@@ -1,26 +1,28 @@
+package victor.javastudy.screenmatch.modelos;
+
 public class Filme {
-    String nome;
+    public String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalAvaliacoes;
     int duracaoEmMinutos;
 
-    int getTotalAvaliacoes(){
+    public int getTotalAvaliacoes(){
         return totalAvaliacoes;
     }
 
-    void exibeFichaTecnica(){
+    public void exibeFichaTecnica(){
         System.out.println("Nome do meu filme preferido: " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
     }
 
-    void avalia(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalAvaliacoes++;
     }
 
-    double pegaMedia(){
+    public double pegaMedia(){
         return somaDasAvaliacoes / totalAvaliacoes;
     }
 }
