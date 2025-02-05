@@ -1,12 +1,12 @@
 package victor.javastudy.screenmatch.modelos;
 
 public class Filme {
-    public String nome;
-    int anoDeLancamento;
-    boolean incluidoNoPlano;
+    private String nome;
+    private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalAvaliacoes;
-    int duracaoEmMinutos;
+    private int duracaoEmMinutos;
 
     public int getTotalAvaliacoes(){
         return totalAvaliacoes;
