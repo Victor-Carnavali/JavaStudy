@@ -56,11 +56,8 @@ public class Titulo {
     public void exibeFichaTecnica(){
         System.out.println("Nome do meu filme/serie preferido(a): " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
-        if(ehSerie){
-            System.out.println("Duracao da serie: " + getDuracaoEmMinutos());
-        } else{
-            System.out.println("Duracao do filme: " + duracaoEmMinutos);
-        }
+        // Refactor using ternary operator
+        System.out.println(ehSerie ? "Duracao da serie: " + getDuracaoEmMinutos() : "Duracao do filme: " + duracaoEmMinutos);
         System.out.println("Total de avaliacoes: " + totalAvaliacoes);
         System.out.printf("%.2f estrelas \n", pegaMedia());
         System.out.println("***********************************************");
