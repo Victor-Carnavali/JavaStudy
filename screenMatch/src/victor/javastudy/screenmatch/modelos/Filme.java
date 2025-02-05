@@ -16,6 +16,18 @@ public class Filme {
         this.nome = nome;
     }
 
+    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+        this.incluidoNoPlano = incluidoNoPlano;
+    }
+
+    public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
     public void exibeFichaTecnica(){
         System.out.println("Nome do meu filme preferido: " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);

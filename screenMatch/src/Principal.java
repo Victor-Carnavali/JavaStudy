@@ -3,9 +3,9 @@ import victor.javastudy.screenmatch.modelos.Filme;
 public class Principal{
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "O poderoso chefao";
-        meuFilme.anoDeLancamento = 1972;
-        meuFilme.duracaoEmMinutos = 180;
+        meuFilme.setNome("O poderoso chefao");
+        meuFilme.setAnoDeLancamento(1972);
+        meuFilme.setDuracaoEmMinutos(180);
 
         meuFilme.exibeFichaTecnica();
 
