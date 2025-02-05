@@ -18,23 +18,23 @@ public class Titulo {
     }
 
     public String getNome() {
-        return nome;
+        return this.nome;
     }
 
     public int getDuracaoEmMinutos() {
-        return duracaoEmMinutos;
+        return this.duracaoEmMinutos;
     }
 
     public int getAnoDeLancamento() {
-        return anoDeLancamento;
+        return this.anoDeLancamento;
     }
 
     public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano;
+        return this.incluidoNoPlano;
     }
 
     public int getTotalAvaliacoes(){
-        return totalAvaliacoes;
+        return this.totalAvaliacoes;
     }
 
     public void setNome(String nome) {
@@ -56,7 +56,7 @@ public class Titulo {
     public void exibeFichaTecnica(){
         System.out.println("Nome do meu filme/serie preferido(a): " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
-        // Refactor using ternary operator
+        // Refactoring using ternary operator
         System.out.println(ehSerie ? "Duracao da serie: " + getDuracaoEmMinutos() : "Duracao do filme: " + duracaoEmMinutos);
         System.out.println("Total de avaliacoes: " + totalAvaliacoes);
         System.out.printf("%.2f estrelas \n", pegaMedia());

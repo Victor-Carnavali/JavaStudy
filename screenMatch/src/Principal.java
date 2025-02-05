@@ -1,3 +1,4 @@
+import victor.javastudy.screenmatch.calculos.CalculadoraDeTempo;
 import victor.javastudy.screenmatch.modelos.Filme;
 import victor.javastudy.screenmatch.modelos.Serie;
 
@@ -7,7 +8,6 @@ public class Principal{
         meuFilme.setNome("O poderoso chefao");
         meuFilme.setAnoDeLancamento(1972);
         meuFilme.setDuracaoEmMinutos(180);
-
         meuFilme.avalia(10);
         meuFilme.avalia(8.95);
         meuFilme.avalia(9.3);
@@ -23,7 +23,17 @@ public class Principal{
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
-
         lost.exibeFichaTecnica();
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.setDuracaoEmMinutos(200);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(lost);
+        System.out.println("Testando calculadora: " + calculadora.getTempoTotal() + " minutos");
     }
 }
