@@ -7,6 +7,15 @@ public class Titulo {
     private double somaDasAvaliacoes;
     private int totalAvaliacoes;
     private int duracaoEmMinutos;
+    private boolean ehSerie;
+
+    public boolean isEhSerie() {
+        return ehSerie;
+    }
+
+    public void setEhSerie(boolean ehSerie) {
+        this.ehSerie = ehSerie;
+    }
 
     public String getNome() {
         return nome;
@@ -45,8 +54,16 @@ public class Titulo {
     }
 
     public void exibeFichaTecnica(){
-        System.out.println("Nome do meu filme preferido: " + nome);
+        System.out.println("Nome do meu filme/serie preferido(a): " + nome);
         System.out.println("Ano de lancamento: " + anoDeLancamento);
+        if(ehSerie){
+            System.out.println("Duracao da serie: " + getDuracaoEmMinutos());
+        } else{
+            System.out.println("Duracao do filme: " + duracaoEmMinutos);
+        }
+        System.out.println("Total de avaliacoes: " + totalAvaliacoes);
+        System.out.printf("%.2f estrelas \n", pegaMedia());
+        System.out.println("***********************************************");
     }
 
     public void avalia(double nota){

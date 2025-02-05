@@ -7,19 +7,23 @@ public class Principal{
         meuFilme.setNome("O poderoso chefao");
         meuFilme.setAnoDeLancamento(1972);
         meuFilme.setDuracaoEmMinutos(180);
-        System.out.println("Duracao do filme: " + meuFilme.getDuracaoEmMinutos());
 
+        meuFilme.avalia(10);
+        meuFilme.avalia(8.95);
+        meuFilme.avalia(9.3);
         meuFilme.exibeFichaTecnica();
-        System.out.println("Total de avaliacoes: " + meuFilme.getTotalAvaliacoes());
-        System.out.printf("%.2f estrelas \n", meuFilme.pegaMedia());
 
         Serie lost = new Serie();
+        lost.setEhSerie(true);
+        lost.avalia(6.5);
+        lost.avalia(7);
+        lost.avalia(6.95);
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
-        lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
-        System.out.println("Duracao do filme: " + lost.getDuracaoEmMinutos());
+        lost.setMinutosPorEpisodio(50);
 
+        lost.exibeFichaTecnica();
     }
 }
