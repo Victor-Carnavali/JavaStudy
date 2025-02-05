@@ -1,4 +1,6 @@
 import victor.javastudy.screenmatch.calculos.CalculadoraDeTempo;
+import victor.javastudy.screenmatch.calculos.FiltroRecomendacao;
+import victor.javastudy.screenmatch.modelos.Episodio;
 import victor.javastudy.screenmatch.modelos.Filme;
 import victor.javastudy.screenmatch.modelos.Serie;
 
@@ -35,5 +37,14 @@ public class Principal{
         calculadora.inclui(outroFilme);
         calculadora.inclui(lost);
         System.out.println("Testando calculadora: " + calculadora.getTempoTotal() + " minutos");
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizacoes(300);
+        filtro.filtra(episodio);
     }
 }
