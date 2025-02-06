@@ -1,3 +1,5 @@
+package victor.javastudy.screenmatch.principal;
+
 import victor.javastudy.screenmatch.calculos.CalculadoraDeTempo;
 import victor.javastudy.screenmatch.calculos.FiltroRecomendacao;
 import victor.javastudy.screenmatch.modelos.Episodio;
