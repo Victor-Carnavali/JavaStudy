@@ -4,6 +4,8 @@ import victor.javastudy.screenmatch.modelos.Episodio;
 import victor.javastudy.screenmatch.modelos.Filme;
 import victor.javastudy.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal{
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -46,5 +48,14 @@ public class Principal{
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        Filme filmeDoPaulo = new Filme();
+        filmeDoPaulo.setNome("Dogville");
+        filmeDoPaulo.setDuracaoEmMinutos(200);
+        filmeDoPaulo.setAnoDeLancamento(2003);
+        filmeDoPaulo.avalia(10);
+
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        
     }
 }
