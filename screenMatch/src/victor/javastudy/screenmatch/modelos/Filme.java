@@ -4,9 +4,8 @@ import victor.javastudy.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
-    public Filme(String nome, int anoLancmento) {
-        this.setNome(nome);
-        this.setAnoDeLancamento(anoLancmento);
+    public Filme(String nome, int anoLancamento) {
+        super (nome, anoLancamento);
     }
 
     public String getDiretor() {
