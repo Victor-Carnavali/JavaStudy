@@ -4,10 +4,9 @@ import victor.javastudy.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
-    public Filme(String nome, int anoLancmento, int duracao) {
+    public Filme(String nome, int anoLancmento) {
         this.setNome(nome);
         this.setAnoDeLancamento(anoLancmento);
-        this.setDuracaoEmMinutos(duracao);
     }
 
     public String getDiretor() {

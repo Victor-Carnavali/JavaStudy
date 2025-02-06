@@ -10,13 +10,13 @@ import java.util.Comparator;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O poderoso chefao", 1972, 180);
+        Filme meuFilme = new Filme("O poderoso chefao", 1972);
         meuFilme.avalia(9);
-        Filme outroFilme = new Filme("Avatar", 2023, 200);
+        Filme outroFilme = new Filme("Avatar", 2023);
         outroFilme.avalia(6);
-        Filme filmeDoPaulo = new Filme("Dogville", 2003, 200);
+        Filme filmeDoPaulo = new Filme("Dogville", 2003);
         filmeDoPaulo.avalia(10);
-        Serie lost = new Serie("Lost", 2000, 10);
+        Serie lost = new Serie("Lost", 2000);
 
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(filmeDoPaulo);
