@@ -1,0 +1,20 @@
+[
+  {
+    "Nome": "About Time",
+    "AnoDeLancamento": 2013,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalAvaliacoes": 0,
+    "DuracaoEmMinutos": 123,
+    "EhSerie": false
+  },
+  {
+    "Nome": "Dogville",
+    "AnoDeLancamento": 2003,
+    "IncluidoNoPlano": false,
+    "SomaDasAvaliacoes": 0.0,
+    "TotalAvaliacoes": 0,
+    "DuracaoEmMinutos": 178,
+    "EhSerie": false
+  }
+]

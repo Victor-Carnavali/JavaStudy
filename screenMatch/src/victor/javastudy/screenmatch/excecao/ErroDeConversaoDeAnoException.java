@@ -2,11 +2,12 @@ package victor.javastudy.screenmatch.excecao;
 
 public class ErroDeConversaoDeAnoException extends RuntimeException {
     private String mensagem;
-    public ErroDeConversaoDeAnoException(String s) {
+    public ErroDeConversaoDeAnoException(String mensagem) {
         this.mensagem = mensagem;
     }
 
-    public String getMensagem() {
+    @Override
+    public String getMessage() {
         return this.mensagem;
     }
 }
