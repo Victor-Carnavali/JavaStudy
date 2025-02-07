@@ -1,6 +1,7 @@
 package victor.javastudy.screenmatch.modelos;
 
 import com.google.gson.annotations.SerializedName;
+import victor.javastudy.screenmatch.excecao.ErroDeConversaoDeAnoException;
 
 public class Titulo implements Comparable<Titulo>{
     private String nome;
@@ -13,6 +14,10 @@ public class Titulo implements Comparable<Titulo>{
 
     public Titulo(TituloOmdb meuTituloOmdb) {
         this.nome = meuTituloOmdb.title();
+
+        if(meuTituloOmdb.year().length() > 4){
+            throw new ErroDeConversaoDeAnoException("Nao consegui converter o ano, porque tem mais de 4 caracteres");
+        }
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0,3));
     }

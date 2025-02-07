@@ -16,10 +16,11 @@ import java.util.Scanner;
 public class PrincipalComBusca {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner leitura = new Scanner(System.in);
-        System.out.println("Digite um filme para busca: ");
+        System.out.print("Digite um filme para busca: ");
         String busca = leitura.nextLine();
 
-        String endereco = "http://www.omdbapi.com/?t=" + busca + "&apikey=e119a4bd";
+        String endereco = "http://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=e119a4bd";
+        System.out.println(endereco);
         try {
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
@@ -40,7 +41,6 @@ public class PrincipalComBusca {
             System.out.println(meuTituloOmdb);
 
             Titulo meuTitulo = new Titulo(meuTituloOmdb);
-            System.out.println("Titulo ja convertido");
             System.out.println("Titulo ja convertido: " + meuTitulo);
         } catch (NumberFormatException e) {
             System.out.println("Aconteceu um erro: " + e.getMessage());
