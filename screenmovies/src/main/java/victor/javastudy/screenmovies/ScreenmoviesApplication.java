@@ -3,7 +3,9 @@ package victor.javastudy.screenmovies;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import victor.javastudy.screenmovies.model.DadosSerie;
 import victor.javastudy.screenmovies.service.ConsumoApi;
+import victor.javastudy.screenmovies.service.ConverteDados;
 
 @SpringBootApplication
 public class ScreenmoviesApplication implements CommandLineRunner {
@@ -16,5 +18,9 @@ public class ScreenmoviesApplication implements CommandLineRunner {
 		var consumoApi = new ConsumoApi();
 		var json = consumoApi.obterDados("http://www.omdbapi.com/?t=the+oc&y=2003&apikey=e119a4bd");
 		System.out.println(json);
+
+		ConverteDados conversor = new ConverteDados();
+		DadosSerie dados = conversor.obterDados(json, DadosSerie.class);
+		System.out.println(dados);
 	}
 }
