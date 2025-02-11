@@ -1,5 +1,6 @@
 package victor.javastudy.screenmovies.principal;
 
+import victor.javastudy.screenmovies.model.DadosEpisodio;
 import victor.javastudy.screenmovies.model.DadosSerie;
 import victor.javastudy.screenmovies.model.DadosTemporada;
 import victor.javastudy.screenmovies.service.ConsumoApi;
@@ -36,5 +37,12 @@ public class Principal {
 		}
         temporadas.forEach(System.out::println);
 
+//        for (int i = 0; i < dados.totalTemporadas(); i++){
+//            List<DadosEpisodio> episodiosTemporadas = temporadas.get(i).episodios();
+//            for (int j = 0; j < episodiosTemporadas.size(); j++){
+//                System.out.println(episodiosTemporadas.get(j).titulo());
+//            }
+//        }
+        temporadas.forEach(t -> t.episodios().forEach(e -> System.out.println(e.titulo())));
     }
 }
