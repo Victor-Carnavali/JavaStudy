@@ -3,6 +3,7 @@ package victor.javastudy.screenmovies;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import victor.javastudy.screenmovies.model.DadosEpisodio;
 import victor.javastudy.screenmovies.model.DadosSerie;
 import victor.javastudy.screenmovies.service.ConsumoApi;
 import victor.javastudy.screenmovies.service.ConverteDados;
@@ -22,5 +23,8 @@ public class ScreenmoviesApplication implements CommandLineRunner {
 		ConverteDados conversor = new ConverteDados();
 		DadosSerie dados = conversor.obterDados(json, DadosSerie.class);
 		System.out.println(dados);
+		json = consumoApi.obterDados("https://www.omdbapi.com/?t=the+oc&y=2003&season=1&episode=3&apikey=e119a4bd");
+		DadosEpisodio dadosEpisodio = conversor.obterDados(json, DadosEpisodio.class);
+		System.out.println(dadosEpisodio);
 	}
 }
