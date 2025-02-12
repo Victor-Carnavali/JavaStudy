@@ -3,6 +3,7 @@ package victor.javastudy.screenmovies.principal;
 import victor.javastudy.screenmovies.model.DadosEpisodio;
 import victor.javastudy.screenmovies.model.DadosSerie;
 import victor.javastudy.screenmovies.model.DadosTemporada;
+import victor.javastudy.screenmovies.model.Episodio;
 import victor.javastudy.screenmovies.service.ConsumoApi;
 import victor.javastudy.screenmovies.service.ConverteDados;
 
@@ -54,5 +55,12 @@ public class Principal {
                 .sorted(Comparator.comparing(DadosEpisodio::avaliacao).reversed())
                 .limit(5)
                 .forEach(System.out::println);
+
+        List<Episodio> episodios = temporadas.stream()
+                .flatMap(t -> t.episodios().stream()
+                        .map(d -> new Episodio(t.numero(), d))
+                ).collect(Collectors.toList());
+
+        episodios.forEach(System.out::println);
     }
 }
