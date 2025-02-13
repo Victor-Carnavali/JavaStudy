@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9cb1f3c2-7c05-41b9-a575-e6035d97c4e5" name="Changes" comment="" />
+    <list default="true" id="9cb1f3c2-7c05-41b9-a575-e6035d97c4e5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../TabelaFipe/src/main/java/victor/javastudy/tabelafipe/TabelaFipe/service/ConverteDados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TabelaFipe/src/main/java/victor/javastudy/tabelafipe/TabelaFipe/service/IConvertDados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TabelaFipe/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TabelaFipe/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,21 +34,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrincipalComBusca.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrincipalComListas.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Victor/OneDrive/Desktop/JavaStudy/screenMatch/dependencias/gson-2.10.1.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Principal.executor": "Run",
+    "Application.PrincipalComBusca.executor": "Run",
+    "Application.PrincipalComListas.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Victor/OneDrive/Desktop/JavaStudy/screenMatch",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="victor.javastudy.screenmatch.excecao" />
